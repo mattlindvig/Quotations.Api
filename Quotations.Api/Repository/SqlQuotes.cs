@@ -1,4 +1,5 @@
 ﻿using Interfaces.Repository;
+using Repository.EF;
 using ServiceModel;
 using System;
 using System.Collections.Generic;
@@ -9,7 +10,8 @@ namespace Repository
     public class SqlQuotes : ISqlQuotes
     {
 
-        private DatabaseThing _context { get; set; }
+        private readonly DatabaseThing _context;
+
         public SqlQuotes(DatabaseThing context)
         {
             _context = context;

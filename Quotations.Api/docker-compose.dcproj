@@ -5,7 +5,7 @@
     <DockerTargetOS>Linux</DockerTargetOS>
     <ProjectGuid>466b1951-4753-4062-a283-7f3d52cc718b</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
-    <DockerServiceUrl>http://localhost:{ServicePort}/api/values</DockerServiceUrl>
+    <DockerServiceUrl>http://localhost:{ServicePort}/api/quote</DockerServiceUrl>
     <DockerServiceName>quotations.api</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>

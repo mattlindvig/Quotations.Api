@@ -4,12 +4,11 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Repository
+namespace Repository.EF
 {
     public class DatabaseThing : DbContext
     {
-        public DatabaseThing(DbContextOptions opts) : base(opts)
-        { }
+        public DatabaseThing(DbContextOptions<DatabaseThing> options) : base(options) { }
         public DbSet<Quote> Quotes { get; set; }
 
         //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

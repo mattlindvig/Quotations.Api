@@ -13,6 +13,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Repository;
+using Repository.EF;
 using ServiceModel;
 
 namespace Quotations.Api
@@ -30,10 +31,11 @@ namespace Quotations.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-            services.AddEntityFrameworkSqlServer().AddDbContext<DatabaseThing>
-                (option => option.UseSqlServer(Configuration["database:connection"]));
-            services.AddSingleton<IQuoteController, QuoteController>();
-            services.AddSingleton<ISqlQuotes, SqlQuotes>();
+            services.AddEntityFrameworkSqlServer();
+            services.AddDbContext<DatabaseThing>
+                (option => option.UseSqlServer(Configuration["database:connection"], b => b.MigrationsAssembly("Repository")));
+            services.AddTransient<IQuoteController, QuoteController>();
+            services.AddTransient<ISqlQuotes, SqlQuotes>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -8,7 +8,7 @@ namespace Controllers
 {
     public class QuoteController : IQuoteController
     {
-        public ISqlQuotes _sqlQuotes { get; set; }
+        private ISqlQuotes _sqlQuotes { get; set; }
 
         public QuoteController(ISqlQuotes sqlQuotes)
         {
