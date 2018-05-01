@@ -3374,9 +3374,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sdgUser\\Documents\\GitHub\\Quotations\\Quotations.Api\\Controller\\Controller.csproj",
-      "projectName": "Controller",
-      "projectPath": "C:\\Users\\sdgUser\\Documents\\GitHub\\Quotations\\Quotations.Api\\Controller\\Controller.csproj",
+      "projectUniqueName": "C:\\Users\\sdgUser\\Documents\\GitHub\\Quotations\\Quotations.Api\\Controller\\Controllers.csproj",
+      "projectName": "Controllers",
+      "projectPath": "C:\\Users\\sdgUser\\Documents\\GitHub\\Quotations\\Quotations.Api\\Controller\\Controllers.csproj",
       "packagesPath": "C:\\Users\\sdgUser\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\sdgUser\\Documents\\GitHub\\Quotations\\Quotations.Api\\Controller\\obj\\",
       "projectStyle": "PackageReference",

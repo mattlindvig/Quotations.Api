@@ -4747,7 +4747,7 @@
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
       },
-      "Controller/1.0.0": {
+      "Controllers/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
@@ -4755,10 +4755,10 @@
           "ServiceModel": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/Controller.dll": {}
+          "bin/placeholder/Controllers.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Controller.dll": {}
+          "bin/placeholder/Controllers.dll": {}
         }
       },
       "Interfaces/1.0.0": {
@@ -12583,10 +12583,10 @@
         "windowsazure.storage.nuspec"
       ]
     },
-    "Controller/1.0.0": {
+    "Controllers/1.0.0": {
       "type": "project",
-      "path": "../Controller/Controller.csproj",
-      "msbuildProject": "../Controller/Controller.csproj"
+      "path": "../Controller/Controllers.csproj",
+      "msbuildProject": "../Controller/Controllers.csproj"
     },
     "Interfaces/1.0.0": {
       "type": "project",
@@ -12606,7 +12606,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
-      "Controller >= 1.0.0",
+      "Controllers >= 1.0.0",
       "Interfaces >= 1.0.0",
       "Microsoft.AspNetCore.All >= 2.0.7",
       "Microsoft.NETCore.App >= 2.0.0",
@@ -12646,8 +12646,8 @@
             "C:\\Users\\sdgUser\\Documents\\GitHub\\Quotations\\Interfaces\\Interfaces.csproj": {
               "projectPath": "C:\\Users\\sdgUser\\Documents\\GitHub\\Quotations\\Interfaces\\Interfaces.csproj"
             },
-            "C:\\Users\\sdgUser\\Documents\\GitHub\\Quotations\\Quotations.Api\\Controller\\Controller.csproj": {
-              "projectPath": "C:\\Users\\sdgUser\\Documents\\GitHub\\Quotations\\Quotations.Api\\Controller\\Controller.csproj"
+            "C:\\Users\\sdgUser\\Documents\\GitHub\\Quotations\\Quotations.Api\\Controller\\Controllers.csproj": {
+              "projectPath": "C:\\Users\\sdgUser\\Documents\\GitHub\\Quotations\\Quotations.Api\\Controller\\Controllers.csproj"
             },
             "C:\\Users\\sdgUser\\Documents\\GitHub\\Quotations\\Quotations.Api\\Repository\\Repository.csproj": {
               "projectPath": "C:\\Users\\sdgUser\\Documents\\GitHub\\Quotations\\Quotations.Api\\Repository\\Repository.csproj"

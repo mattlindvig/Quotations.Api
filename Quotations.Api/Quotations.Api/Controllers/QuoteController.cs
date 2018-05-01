@@ -11,26 +11,26 @@ namespace Quotations.Api.Controllers
     [Route("api/[controller]")]
     public class QuoteController : Controller
     {
-        public IQuoteController controller { get; set; }
+        public IQuoteController ctrl { get; set; }
         // GET api/values
         [HttpGet]
         public IEnumerable<Quote> Get()
         {
-            return controller.GetAllQuotes();
+            return ctrl.GetAllQuotes();
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
         public Quote Get(int id)
         {
-            return controller.GetQuote(id);
+            return ctrl.GetQuote(id);
         }
 
         // POST api/values
         [HttpPost]
         public void Post([FromBody]Quote value)
         {
-            controller.Add(value);
+            ctrl.Add(value);
         }
 
         //// PUT api/values/5

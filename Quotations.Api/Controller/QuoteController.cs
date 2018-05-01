@@ -4,7 +4,7 @@ using ServiceModel;
 using System;
 using System.Collections.Generic;
 
-namespace Controller
+namespace Controllers
 {
     public class QuoteController : IQuoteController
     {

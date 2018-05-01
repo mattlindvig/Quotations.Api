@@ -9,11 +9,11 @@ Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-co
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceModel", "ServiceModel\ServiceModel.csproj", "{E8C54CF7-AE6E-4437-8147-9579D6254C51}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Controller", "Controller\Controller.csproj", "{80881528-D244-44C6-B867-96A56FBA1D80}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Controllers", "Controller\Controllers.csproj", "{80881528-D244-44C6-B867-96A56FBA1D80}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "Repository\Repository.csproj", "{8561E2B1-5B1B-44B4-A1B7-87573A7BD750}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "..\Interfaces\Interfaces.csproj", "{233E048D-676D-4193-8797-3FFD628CD675}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interfaces", "..\Interfaces\Interfaces.csproj", "{233E048D-676D-4193-8797-3FFD628CD675}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

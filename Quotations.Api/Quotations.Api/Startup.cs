@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Controller;
+using Controllers;
 using Interfaces.Controller;
 using Interfaces.Repository;
 using Microsoft.AspNetCore.Builder;
