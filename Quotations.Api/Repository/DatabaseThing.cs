@@ -8,6 +8,8 @@ namespace Repository
 {
     public class DatabaseThing : DbContext
     {
+        public DatabaseThing(DbContextOptions opts) : base(opts)
+        { }
         public DbSet<Quote> Quotes { get; set; }
 
         //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

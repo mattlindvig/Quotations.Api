@@ -12590,8 +12590,8 @@
     },
     "Interfaces/1.0.0": {
       "type": "project",
-      "path": "../../Interfaces/Interfaces.csproj",
-      "msbuildProject": "../../Interfaces/Interfaces.csproj"
+      "path": "../Interfaces/Interfaces.csproj",
+      "msbuildProject": "../Interfaces/Interfaces.csproj"
     },
     "Repository/1.0.0": {
       "type": "project",
@@ -12607,7 +12607,6 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "Controllers >= 1.0.0",
-      "Interfaces >= 1.0.0",
       "Microsoft.AspNetCore.All >= 2.0.7",
       "Microsoft.NETCore.App >= 2.0.0",
       "Repository >= 1.0.0"
@@ -12643,9 +12642,6 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\sdgUser\\Documents\\GitHub\\Quotations\\Interfaces\\Interfaces.csproj": {
-              "projectPath": "C:\\Users\\sdgUser\\Documents\\GitHub\\Quotations\\Interfaces\\Interfaces.csproj"
-            },
             "C:\\Users\\sdgUser\\Documents\\GitHub\\Quotations\\Quotations.Api\\Controller\\Controllers.csproj": {
               "projectPath": "C:\\Users\\sdgUser\\Documents\\GitHub\\Quotations\\Quotations.Api\\Controller\\Controllers.csproj"
             },

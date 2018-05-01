@@ -18,7 +18,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Interfaces\Interfaces.csproj" />
     <ProjectReference Include="..\Controller\Controllers.csproj" />
     <ProjectReference Include="..\Repository\Repository.csproj" />
   </ItemGroup>

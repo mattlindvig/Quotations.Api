@@ -31,7 +31,7 @@ namespace Quotations.Api
         {
             services.AddMvc();
             services.AddEntityFrameworkSqlServer().AddDbContext<DatabaseThing>
-                 (option => option.UseSqlServer(Configuration["database:connection"]));
+                (option => option.UseSqlServer(Configuration["database:connection"]));
             services.AddSingleton<IQuoteController, QuoteController>();
             services.AddSingleton<ISqlQuotes, SqlQuotes>();
         }
