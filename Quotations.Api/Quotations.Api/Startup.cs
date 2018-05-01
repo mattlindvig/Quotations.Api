@@ -2,12 +2,18 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Controller;
+using Interfaces.Controller;
+using Interfaces.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Repository;
+using ServiceModel;
 
 namespace Quotations.Api
 {
@@ -24,6 +30,10 @@ namespace Quotations.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddEntityFrameworkSqlServer().AddDbContext<DatabaseThing>
+                 (option => option.UseSqlServer(Configuration["database:connection"]));
+            services.AddSingleton<IQuoteController, QuoteController>();
+            services.AddSingleton<ISqlQuotes, SqlQuotes>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

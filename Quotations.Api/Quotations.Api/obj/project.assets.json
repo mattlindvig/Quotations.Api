@@ -4747,6 +4747,20 @@
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
       },
+      "Controller/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Interfaces": "1.0.0",
+          "ServiceModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Controller.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Controller.dll": {}
+        }
+      },
       "Interfaces/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
@@ -4758,6 +4772,20 @@
         },
         "runtime": {
           "bin/placeholder/Interfaces.dll": {}
+        }
+      },
+      "Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Interfaces": "1.0.0",
+          "ServiceModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Repository.dll": {}
         }
       },
       "ServiceModel/1.0.0": {
@@ -12555,10 +12583,20 @@
         "windowsazure.storage.nuspec"
       ]
     },
+    "Controller/1.0.0": {
+      "type": "project",
+      "path": "../Controller/Controller.csproj",
+      "msbuildProject": "../Controller/Controller.csproj"
+    },
     "Interfaces/1.0.0": {
       "type": "project",
       "path": "../../Interfaces/Interfaces.csproj",
       "msbuildProject": "../../Interfaces/Interfaces.csproj"
+    },
+    "Repository/1.0.0": {
+      "type": "project",
+      "path": "../Repository/Repository.csproj",
+      "msbuildProject": "../Repository/Repository.csproj"
     },
     "ServiceModel/1.0.0": {
       "type": "project",
@@ -12568,9 +12606,11 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "Controller >= 1.0.0",
       "Interfaces >= 1.0.0",
       "Microsoft.AspNetCore.All >= 2.0.7",
-      "Microsoft.NETCore.App >= 2.0.0"
+      "Microsoft.NETCore.App >= 2.0.0",
+      "Repository >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -12605,6 +12645,12 @@
           "projectReferences": {
             "C:\\Users\\sdgUser\\Documents\\GitHub\\Quotations\\Interfaces\\Interfaces.csproj": {
               "projectPath": "C:\\Users\\sdgUser\\Documents\\GitHub\\Quotations\\Interfaces\\Interfaces.csproj"
+            },
+            "C:\\Users\\sdgUser\\Documents\\GitHub\\Quotations\\Quotations.Api\\Controller\\Controller.csproj": {
+              "projectPath": "C:\\Users\\sdgUser\\Documents\\GitHub\\Quotations\\Quotations.Api\\Controller\\Controller.csproj"
+            },
+            "C:\\Users\\sdgUser\\Documents\\GitHub\\Quotations\\Quotations.Api\\Repository\\Repository.csproj": {
+              "projectPath": "C:\\Users\\sdgUser\\Documents\\GitHub\\Quotations\\Quotations.Api\\Repository\\Repository.csproj"
             }
           }
         }
