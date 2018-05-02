@@ -1,0 +1,11 @@
+services:
+  quotations.api:
+    build:
+      context: C:\Users\sdgUser\Documents\GitHub\Quotations\Quotations.Api
+      dockerfile: Quotations.Api/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: quotationsapi
+    ports:
+    - 80/tcp
+version: '3.0'
