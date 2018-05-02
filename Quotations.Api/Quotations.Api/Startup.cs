@@ -35,7 +35,9 @@ namespace Quotations.Api
             services.AddDbContext<DatabaseSetup>
                 (option => option.UseSqlServer(Configuration["database:connection"], b => b.MigrationsAssembly("Repository")));
             services.AddTransient<IQuoteController, QuoteController>();
-            services.AddTransient<ISqlQuotes, QuoteRepository>();
+            services.AddTransient<IUserController, UserController>();
+            services.AddTransient<IAuthorController, AuthorController>();
+            services.AddTransient<IQuoteRepository, QuoteRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
