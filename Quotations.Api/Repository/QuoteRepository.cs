@@ -7,12 +7,12 @@ using System.Linq;
 
 namespace Repository
 {
-    public class SqlQuotes : ISqlQuotes
+    public class QuoteRepository : ISqlQuotes
     {
 
-        private readonly DatabaseThing _context;
+        private readonly DatabaseSetup _context;
 
-        public SqlQuotes(DatabaseThing context)
+        public QuoteRepository(DatabaseSetup context)
         {
             _context = context;
         }
@@ -23,7 +23,7 @@ namespace Repository
         }
         public Quote Get(int ID)
         {
-            return _context.Quotes.FirstOrDefault(e => e.Id == ID);
+            return _context.Quotes.FirstOrDefault(e => e.QuoteId == ID);
         }
         public List<Quote> GetAll()
         {

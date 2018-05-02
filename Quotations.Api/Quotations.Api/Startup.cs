@@ -32,10 +32,10 @@ namespace Quotations.Api
         {
             services.AddMvc();
             services.AddEntityFrameworkSqlServer();
-            services.AddDbContext<DatabaseThing>
+            services.AddDbContext<DatabaseSetup>
                 (option => option.UseSqlServer(Configuration["database:connection"], b => b.MigrationsAssembly("Repository")));
             services.AddTransient<IQuoteController, QuoteController>();
-            services.AddTransient<ISqlQuotes, SqlQuotes>();
+            services.AddTransient<ISqlQuotes, QuoteRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

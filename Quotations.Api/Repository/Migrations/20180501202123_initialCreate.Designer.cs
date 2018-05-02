@@ -10,7 +10,7 @@ using System;
 
 namespace Repository.Migrations
 {
-    [DbContext(typeof(DatabaseThing))]
+    [DbContext(typeof(DatabaseSetup))]
     [Migration("20180501202123_initialCreate")]
     partial class initialCreate
     {
