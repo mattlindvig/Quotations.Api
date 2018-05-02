@@ -8,19 +8,19 @@ namespace Controllers
 {
     public class QuoteController : IQuoteController
     {
-        private ISqlQuotes _sqlQuotes { get; set; }
+        private IQuoteRepository _sqlQuotes { get; set; }
 
-        public QuoteController(ISqlQuotes sqlQuotes)
+        public QuoteController(IQuoteRepository sqlQuotes)
         {
             _sqlQuotes = sqlQuotes;
         }
         public Quote GetQuote(int Id)
         {
-            return _sqlQuotes.Get(Id);
+            return _sqlQuotes.GetQuote(Id);
         }
         public List<Quote> GetAllQuotes()
         {
-            return _sqlQuotes.GetAll();
+            return _sqlQuotes.GetAllQuotes();
         }
         public void Add(Quote quote)
         {
