@@ -60,5 +60,10 @@ namespace Repository
         {
             return _context.Author.ToList<Author>();
         }
+
+        public List<Quote> GetQuotes(string searchText)
+        {
+            return _context.Quotes.Where(x => x.Quotation.Contains(searchText)).ToList();
+        }
     }
 }
