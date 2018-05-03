@@ -10,6 +10,7 @@ namespace Interfaces.Repository
         void Add(Quote emp);
         Quote GetQuote(int ID);
         List<Quote> GetAllQuotes();
+        List<Quote> GetQuotes(string searchText);
 
         void Add(User user);
         User GetUser(int ID);

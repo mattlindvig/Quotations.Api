@@ -16,14 +16,23 @@ namespace Quotations.Api.Controllers
         {
             _ctrl = ctrl;
         }
-        // GET api/values
-        [HttpGet]
-        public IEnumerable<Quote> Get()
-        {
-            return _ctrl.GetAllQuotes();
-        }
 
         // GET api/values/5
+        [HttpGet("")]
+        public List<Quote> Get([FromQuery] string searchText)
+        {
+            List<Quote> quotes;
+            if(!string.IsNullOrEmpty(searchText))
+            {
+                quotes =  _ctrl.GetQuotes(searchText);
+            }
+            else
+            {
+                quotes = _ctrl.GetAllQuotes();
+            }
+            return quotes;
+        }
+
         [HttpGet("{id}")]
         public Quote Get(int id)
         {

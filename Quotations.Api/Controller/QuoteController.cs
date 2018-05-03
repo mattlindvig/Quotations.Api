@@ -26,5 +26,10 @@ namespace Controllers
         {
             _sqlQuotes.Add(quote);
         }
+
+        public List<Quote> GetQuotes(string searchText)
+        {
+            return _sqlQuotes.GetQuotes(searchText);
+        }
     }
 }
